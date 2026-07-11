@@ -1,0 +1,23 @@
+# Keep real enterprise documents local.
+data/raw/
+data/interim/
+data/processed/
+
+# Generated outputs
+outputs/figures/*
+outputs/results/*
+outputs/reports/*
+outputs/audit/*
+!outputs/.gitkeep
+
+# Python, notebooks, environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
