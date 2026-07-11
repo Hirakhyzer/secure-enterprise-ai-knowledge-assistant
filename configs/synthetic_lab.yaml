@@ -1,0 +1,18 @@
+seed: 42
+output_dir: outputs
+retrieval:
+  top_k: 4
+  min_similarity: 0.06
+rbac:
+  enforce_before_retrieval: true
+  roles: [employee, manager, engineer, security_analyst, finance, legal, hr, support, admin]
+grounding:
+  require_citations: true
+  fallback_message: "I don't know from the available authorized documents."
+audit:
+  hash_chained: true
+  log_path: outputs/audit/query_audit_log.jsonl
+safety:
+  real_company_documents_committed: false
+  train_on_private_docs: false
+  synthetic_data_only_default: true
